@@ -1,0 +1,31 @@
+.trusted {
+  background: #F6F6F6;
+
+  &__label {
+    font-size: 21px;
+    margin-bottom: 60px;
+  }
+
+  &__inner {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -14px;
+  }
+
+  &__item {
+    flex: 0 0 196px;
+    background: #fff;
+    border-radius: 15px;
+    min-height: 74px;
+    width: 196px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all ease 0.2s;
+    margin: 14px;
+    filter: grayscale(100%);
+  }
+}
+
+.container {}

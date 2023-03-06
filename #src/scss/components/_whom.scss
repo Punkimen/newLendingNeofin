@@ -1,0 +1,55 @@
+.whom {
+
+  &__title {
+    margin-bottom: 60px;
+  }
+
+  &__wrapper {}
+}
+
+.whom-item {
+  padding: 45px 45px;
+  background: #FFFFFF;
+  border: 1px solid #EEEEEE;
+  border-radius: 10px;
+
+  @media(max-width:$md5) {
+    padding: 30px 15px;
+  }
+
+  &__header {
+    position: relative;
+    margin-bottom: 32px;
+    display: flex;
+    align-items: center;
+
+    .icon-block__icon {
+      position: relative;
+
+      img {
+        width: 24px;
+        height: auto;
+      }
+    }
+  }
+
+  &__label {
+    margin-left: 25px;
+  }
+
+  &__text {
+    color: #4A4C57;
+    font-size: 15px;
+
+    p {
+      &:not(:last-child) {
+        margin-bottom: 12px;
+      }
+    }
+  }
+}
+
+.icon-block {
+
+  &__icon {}
+}

@@ -1,0 +1,22 @@
+.release {
+
+  &__title {
+    margin-bottom: 62px;
+  }
+
+  &__wrapper {
+    column-gap: 62px;
+  }
+}
+
+.release-item {
+  .icon-block__icon {
+    img {
+      display: block;
+      width: 24px;
+      height: auto;
+    }
+  }
+
+  &__text {}
+}

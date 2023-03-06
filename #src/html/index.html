@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    @@include('components/_header.html')
+    <main class="main-wrapper">
+        @@include('components/_hero.html')
+        @@include('components/_build.html')
+        @@include('components/_banking.html')
+        @@include('components/_release.html')
+        <section class="trusted">
+            <div class="container">
+                <div class="trusted__label">We are trusted by</div>
+                <div class="trusted__inner">
+                    <a href="" class="trusted__item">
+                        <img src="img/trusted/icon_1.png" alt="citybank">
+                    </a>
+                    <a href="" class="trusted__item">
+                        <img src="img/trusted/icon_2.png" alt="ca">
+                    </a>
+                    <a href="" class="trusted__item">
+                        <img src="img/trusted/icon_3.png" alt="raiffeisen">
+                    </a>
+                </div>
+            </div>
+        </section>
+        @@include('components/_whom.html')
+        @@include('components/_footer.html')
+    </main>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
