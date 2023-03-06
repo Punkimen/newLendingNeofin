@@ -1,0 +1,55 @@
+.hero {
+
+  &__handle {
+    display: flex;
+    align-items: flex-end;
+
+    @media(max-width:$md5) {
+      display: block;
+    }
+  }
+
+  &__handle-input {
+    width: 100%;
+    margin-bottom: 0 !important;
+    margin-right: 16px;
+    text-align: left;
+
+    @media(max-width:$md5) {
+      margin-right: 0;
+      margin-bottom: 16px !important;
+    }
+  }
+
+  &__handle-btn {
+    min-height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &_product {
+    .hero__img {
+      position: relative;
+      transform: translateX(22%);
+      width: 100%;
+      max-width: 708px;
+      margin-right: 0;
+      margin-left: auto;
+
+      @media(max-width:$md4) {
+        margin: 0 auto;
+        transform: translateX(0);
+      }
+    }
+  }
+}
+
+.input-block {
+
+  &__label {}
+
+  &__field {}
+}
+
+.btn {}

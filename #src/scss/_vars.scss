@@ -153,6 +153,27 @@ textarea {
     }
 }
 
+.text-bg {
+    position: relative;
+
+    span {
+        position: relative;
+        z-index: 2;
+    }
+
+    &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        left: 0;
+        transform: translateY(-50%);
+        background: var(--color-green);
+        width: 100%;
+        height: calc(100% + 5px);
+    }
+}
 
 h1.section-title {}
 
@@ -185,5 +206,136 @@ section {
 
     @media(max-width:$md3) {
         grid-template-columns: 1fr;
+    }
+}
+
+
+.input-block {
+    position: relative;
+
+    &:not(:last-child) {
+        margin-bottom: 8px;
+    }
+
+    &__label {
+        display: block;
+        margin-bottom: 8px;
+        font-size: 14px;
+
+        span {
+            color: #DE350B;
+        }
+    }
+
+    label.error {
+        position: absolute;
+        bottom: -15px;
+        font-size: 10px;
+        color: red;
+    }
+}
+
+.input-checkbox {
+    .contol-group__text {
+        font-size: 12px;
+        line-height: 1.5em;
+    }
+}
+
+input,
+select {
+    padding: 16px 12px 17px 12px;
+    font-family: "CircularStd", "Mulish", serif;
+    font-size: 14px;
+    background: #FAFBFC;
+    border: 2px solid #DFE1E6;
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+    outline: none;
+
+    &.filed {
+        border-color: #D3DD55;
+        background: #fff;
+    }
+
+    &.error {
+        border-color: #DE350B;
+    }
+
+    &:hover,
+    &:focus {
+        border-color: #D3DD55;
+        background: #fff;
+    }
+}
+
+.error-color {
+    color: #FA8D75;
+}
+
+textarea {
+    padding: 16px 12px 17px 12px;
+    font-family: "CircularStd", "Mulish", serif;
+    font-size: 14px;
+    background: #FAFBFC;
+    border: 2px solid #DFE1E6;
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+    resize: none;
+    min-height: 108px;
+    outline: none;
+
+    &.filed {
+        border-color: #D3DD55;
+        background: #fff;
+    }
+
+    &.error {
+        border-color: #DE350B;
+    }
+
+    &::hover,
+    &::focus {
+        border-color: #D3DD55;
+        background: #fff;
+    }
+}
+
+.input-date {
+    position: relative;
+
+    &__icon {
+        pointer-events: none;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 10px;
+    }
+
+    input {
+        padding-right: 40px;
+    }
+}
+
+.input-date {
+    select {
+        appearance: none;
+    }
+}
+
+.input-withIcon {
+    position: relative;
+
+    .input-icon {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 10px;
+    }
+
+    input {
+        padding-right: 40px;
     }
 }

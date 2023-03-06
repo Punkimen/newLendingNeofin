@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Start</title>
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  @@include('components/_header.html')
+  <main class="main-wrapper">
+    @@include('components/_hero_product.html')
+    @@include('components/_how.html')
+    <section class="shedule">
+      <div class="container">
+        <div class="pricing-contact">
+          <div class="pricing-contact__person">
+            <div class="pricing-contact__photo">
+              <img src="img/man.png" alt="">
+            </div>
+            <div class="pricing-contact__text">Schedule a call to discuss your requirements, project
+              implementation stages, and pricing.
+
+            </div>
+          </div>
+          <a href="#" class="pricing-contact__btn btn">Schedule a Call</a>
+        </div>
+      </div>
+    </section>
+    @@include('components/_footer.html')
+  </main>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
